@@ -165,3 +165,10 @@
 ::-webkit-scrollbar-track { background: #000; }
 ::-webkit-scrollbar-thumb { background: #07567F; border-radius: 6px; }
 ::-webkit-scrollbar-thumb:hover { background: #0588C6; }
+
+/* Header logo exact sizing */
+.header-logo {
+  width: 200px !important;
+  height: 150px !important;
+  object-fit: contain;
+}

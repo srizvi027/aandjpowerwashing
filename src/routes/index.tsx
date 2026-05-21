@@ -11,7 +11,7 @@ import { Loader } from "@/components/Loader";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { MobileStickyCTA } from "@/components/MobileStickyCTA";
 
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo1.png";
 import hero from "@/assets/hero.jpg";
 import beforeDriveway from "@/assets/before-driveway.jpg";
 import afterDriveway from "@/assets/after-driveway.jpg";
@@ -38,7 +38,7 @@ function Nav() {
     <header className="fixed top-0 inset-x-0 z-40 bg-black/80 backdrop-blur-xl border-b border-[#0588C6]/20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
         <a href="#top" className="flex items-center gap-3">
-          <img src={logo} alt="A&J Power Washing Services" className="h-10 md:h-12 w-auto" />
+          <img src={logo} alt="A&J Power Washing Services" className="header-logo" />
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {NAV.map(n => (
