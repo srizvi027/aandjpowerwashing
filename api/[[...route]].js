@@ -1,4 +1,4 @@
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -9,7 +9,8 @@ let serverModule;
 
 async function getServerModule() {
   if (!serverModule) {
-    serverModule = await import(path.join(__dirname, '../dist/server/server.js'));
+    const serverPath = path.join(__dirname, '../dist/server/server.js');
+    serverModule = await import(pathToFileURL(serverPath).href);
   }
   return serverModule;
 }
