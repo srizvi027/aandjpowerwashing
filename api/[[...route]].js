@@ -9,7 +9,7 @@ let serverModule;
 
 async function getServerModule() {
   if (!serverModule) {
-    const serverPath = path.join(__dirname, '../dist/server/server.js');
+    const serverPath = path.join(__dirname, '../dist/server/index.js');
     serverModule = await import(pathToFileURL(serverPath).href);
   }
   return serverModule;
