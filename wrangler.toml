@@ -5,6 +5,3 @@ main = "src/server.ts"
 
 [assets]
 directory = "dist/client"
-
-[build]
-command = "bun run build && rm dist/client/wrangler.json"
